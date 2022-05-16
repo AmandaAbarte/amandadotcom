@@ -1,6 +1,8 @@
 body {
-    background-color: #1E1E1E;
+  background-color: #1e1e1e;
 }
-
+* {
+  margin: 0 auto;
+}
 @import "./Styling/Variables";
 @import "./Styling/Nav";
