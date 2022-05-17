@@ -4,8 +4,11 @@ body {
 * {
   margin: 0 auto;
 }
-
+.app {
+    position: relative;
+}
 @import "./Styling/Variables";
 @import "./Styling/Nav";
 @import "./Styling/Loader";
 @import "./Styling/Typography";
+@import "./Styling/Mode";

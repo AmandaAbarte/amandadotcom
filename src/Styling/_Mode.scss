@@ -1,0 +1,38 @@
+.mode {
+  position: absolute;
+  top: 0;
+  right: 40px;
+  display: flex;
+  .light-string {
+    .string {
+      width: 2px;
+      height: 90px;
+      background-color: white;
+    }
+    .ball {
+      border-radius: 50%;
+      width: 15px;
+      height: 15px;
+      background-color: white;
+    }
+  }
+  .light-hang {
+    margin: 0 20px;
+    .string {
+      width: 2px;
+      height: 70px;
+      background-color: white;
+    }
+    .bulb {
+      width: 30px;
+      transform: rotate(180deg);
+      filter: invert(100%) drop-shadow(4px 4px 10px black);
+    }
+  }
+}
+.lightmode {
+  color: black;
+}
+.darkmode {
+  color: white;
+}
