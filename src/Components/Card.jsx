@@ -7,10 +7,10 @@ export default function Card(props) {
     setIsSelected((prevShow) => !prevShow);
   }
   return (
-    <div key={props.title} onClick={handleClick} className="tarot">
+    <div key={props.title} onClick={handleClick} className={`tarot `}>
       <img
         src={props.image}
-        className={isSelected ? `clicked` : `unclicked`}
+        className={isSelected ? `clicked` : ``}
       ></img>
       <h1>{props.title}</h1>
     </div>

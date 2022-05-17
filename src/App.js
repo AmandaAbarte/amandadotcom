@@ -6,7 +6,7 @@ import Loader from './Components/Loader';
 function App() {
   return (
     <div className="App">
-      <Loader />
+      {/* <Loader /> */}
       <Nav />
     </div>
   );

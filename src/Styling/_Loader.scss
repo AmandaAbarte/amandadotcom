@@ -23,14 +23,22 @@
       position: absolute;
       animation: bird 4s linear infinite;
     }
-    .bird {
+    .one {
       top: 0;
     }
-    .sand {
+    .two {
+        top: 30%;
+        right: 0;
+    }
+    .three {
       left: 0;
       bottom: 0;
     }
-    .rose {
+    .four {
+        top: 30%;
+        left: 0;
+    }
+    .five {
       right: 0;
       bottom: 0;
     }
