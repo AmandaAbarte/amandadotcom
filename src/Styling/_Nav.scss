@@ -19,6 +19,8 @@
 
       img {
         width: 95%;
+        border-radius: 10px;
+        overflow: hidden;
       }
       h1 {
         position: absolute;
@@ -37,7 +39,19 @@
     transform: rotateX(180deg);
   }
 }
+@keyframes flipBackwards {
+  0% {
+    transform: rotateX(180deg);
+  }
+  100% {
+    transform: rotateX(0deg);
+  }
+}
 
 .clicked {
   animation: flipForewards 2s ease-in-out forwards;
+}
+
+.unclicked {
+  animation: flipBackwards 2s ease-in-out forwards;
 }

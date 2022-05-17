@@ -1,0 +1,78 @@
+.loader-container {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  background-color: black;
+  animation: hide 1s ease-in-out 4s forwards;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .card-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    
+    animation: rotateContainer 4s linear forwards;
+    .loader-card {
+      width: 100px;
+      position: absolute;
+      animation: bird 4s linear infinite;
+    }
+    .bird {
+      top: 0;
+    }
+    .sand {
+      left: 0;
+      bottom: 0;
+    }
+    .rose {
+      right: 0;
+      bottom: 0;
+    }
+  }
+}
+@keyframes rotateContainer {
+    0% {
+        transform: rotate(0deg);
+      }
+      33% {
+        transform: rotate(-120deg);
+      }
+      66% {
+        transform: rotate(-240deg);
+      }
+      100% {
+          transform: rotate(-360deg);
+        // transform: rotate(360deg);
+      }
+}
+@keyframes bird {
+  0% {
+    transform: rotate(0deg);
+  }
+  33% {
+    transform: rotate(120deg);
+  }
+  66% {
+    transform: rotate(240deg);
+  }
+  100% {
+      transform: rotate(360deg);
+    // transform: rotate(360deg);
+  }
+}
+@keyframes hide {
+    0%{
+        opacity: 100%;
+        visibility: visible;
+    }
+    100%{
+        opacity: 0%;
+        visibility: hidden;
+    }
+}
