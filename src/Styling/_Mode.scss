@@ -3,11 +3,13 @@
   top: 0;
   right: 40px;
   display: flex;
+  z-index: 1;
   .light-string {
     position: relative;
     transition: all 0.5s ease-in-out;
+    // cursor: url(pointer.png), pointer;
     .string {
-      width: 2px;
+      width: 1px;
       height: 90px;
       background-color: white;
     }
@@ -19,9 +21,9 @@
     }
   }
   .light-hang {
-    margin: 0 20px;
+    margin: 0 10px;
     .string {
-      width: 2px;
+      width: 1px;
       height: 70px;
       background-color: white;
       &:hover {
@@ -29,9 +31,9 @@
       }
     }
     .bulb {
-      width: 30px;
+      width: 50px;
       transform: rotate(180deg);
-      filter: invert(100%) drop-shadow(4px 4px 10px rgb(0, 42, 255));
+      filter: invert(100%) drop-shadow(0px 0px 3px rgb(0, 42, 255));
     }
   }
 }
@@ -82,7 +84,6 @@
     // margin-top: 10px;
   }
 }
-
 
 .pullStringOff {
   animation: pullStringOff 0.4s ease-in-out forwards;

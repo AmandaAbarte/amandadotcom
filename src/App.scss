@@ -1,13 +1,15 @@
 body {
-  background-color: #1e1e1e;
+  background-color: red;
+
+  height: 100%;
 }
 * {
   margin: 0 auto;
 }
 .app {
   position: relative;
-
   transition: all 0.5s ease-in-out;
+  //   cursor: url(cursor.png), auto;
 }
 @import "./Styling/Variables";
 @import "./Styling/Nav";

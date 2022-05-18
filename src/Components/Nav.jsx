@@ -15,7 +15,11 @@ export default function Nav(props) {
     { title: "About", imageD: roseD, imageL: roseL, navCard: false},
     { title: "Contact", imageD: snakeD, imageL: snakeL, navCard: false},
   ]);
-
+  const [isSelected, setIsSelected] = React.useState(false);
+  function handleClick() {
+    setIsSelected((prevShow) => !prevShow);
+  }
+  console.log(isSelected);
   const allCards = cards.map((card) => {
     return (
       <Card
@@ -25,15 +29,16 @@ export default function Nav(props) {
         imageL={card.imageL}
         mode={props.mode}
         lights={props.lights}
-        navCard={card.navCard}
+        isSelected={isSelected}
+        handleClick={handleClick}
       />
     );
   });
 
   return (
-    <div className="cards">
-      <h1 className={props.mode}>Pick a Card</h1>
-      <div className="tarot-container">{allCards}</div>
+    <div className={`cards ${isSelected? `nav-to-top`: ``}`}  style={{backgroundColor: props.lights? "white" : "black"}}>
+      <h1 className={`${props.mode} heading`}>Pick a Card</h1>
+      <div className={`tarot-container `}>{allCards}</div>
     </div>
   );
 }

@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Zen+Loop:ital@0;1&display=swap");
 body {
-  background-color: #1e1e1e;
+  background-color: red;
+  height: 100%;
 }
 
 * {
@@ -13,34 +14,31 @@ body {
 }
 
 .cards {
+  position: fixed;
   display: flex;
   align-items: center;
   flex-direction: column;
   color: white;
   width: 100%;
   height: 100%;
+  transition: all 0.5s ease-in-out;
 }
 
-.cards h1 {
+.cards .heading {
   margin: 20px 0;
   font-size: 100px;
-}
-
-.cards .tarot-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  position: relative;
+  transition: all 0.5s ease-in-out;
 }
 
 .cards .tarot-container .tarot {
-  min-width: 28%;
-  max-width: 250px;
-  max-height: 100%;
+  position: absolute;
+  width: 300px;
+  top: 20%;
   margin: 0 5px;
-  position: relative;
+  border-radius: 10px;
+  transition: all 0.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
 }
 
 .cards .tarot-container .tarot img {
@@ -51,65 +49,42 @@ body {
 
 .cards .tarot-container .tarot h1 {
   font-size: 40px;
-  position: absolute;
-  bottom: 4%;
-  left: 30%;
+}
+
+.cards .tarot-container .Portfolio {
+  left: 10%;
+}
+
+.cards .tarot-container .Contact {
+  right: 10%;
+}
+
+.cards .tarot-container .About {
+  right: 37%;
 }
 
 .clicked {
   animation: flipForewards 1s ease-in-out forwards;
 }
 
-@keyframes flipForewards {
-  0% {
-    opacity: 1;
-    visibility: visible;
-  }
-  100% {
-    opacity: 0;
-    visibility: hidden;
-  }
-}
-
-.expand {
-  animation: expandSection 2s ease-in-out 1s forwards;
-}
-
-@keyframes expandSection {
-  0% {
-    background-color: transparent;
-    border: none;
-    max-width: 250px;
-    border-radius: 5px;
-    transform-origin: left center;
-  }
-  100% {
-    background-color: black;
-    border-radius: 5px;
-    max-width: 800px;
-    height: 500px;
-    border: 5px white solid;
-    transform-origin: left center;
-  }
-}
-
 .unclicked {
   animation: flipBackwards 2s ease-in-out forwards;
 }
 
-@keyframes flipBackwards {
-  0% {
-    transform: rotateX(180deg);
-    transform-origin: top center;
-  }
-  100% {
-    transform: rotateX(-180deg);
-    transform-origin: top center;
-  }
-}
-
 .navCard {
   background-color: red;
+}
+
+.nav-to-top {
+  height: 19%;
+}
+
+.nav-to-top .heading {
+  display: none;
+}
+
+.tarot-to-nav {
+  transform: translateY(-90%);
 }
 
 .loader-container {
@@ -216,6 +191,7 @@ h1 {
   top: 0;
   right: 40px;
   display: flex;
+  z-index: 1;
 }
 
 .mode .light-string {
@@ -224,7 +200,7 @@ h1 {
 }
 
 .mode .light-string .string {
-  width: 2px;
+  width: 1px;
   height: 90px;
   background-color: white;
 }
@@ -237,11 +213,11 @@ h1 {
 }
 
 .mode .light-hang {
-  margin: 0 20px;
+  margin: 0 10px;
 }
 
 .mode .light-hang .string {
-  width: 2px;
+  width: 1px;
   height: 70px;
   background-color: white;
 }
@@ -251,9 +227,9 @@ h1 {
 }
 
 .mode .light-hang .bulb {
-  width: 30px;
+  width: 50px;
   transform: rotate(180deg);
-  filter: invert(100%) drop-shadow(4px 4px 10px #002aff);
+  filter: invert(100%) drop-shadow(0px 0px 3px #002aff);
 }
 
 .lightmode {

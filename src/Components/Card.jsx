@@ -1,21 +1,19 @@
 import React, { useEffect } from "react";
 
 export default function Card(props) {
-  const [isSelected, setIsSelected] = React.useState(false);
-    const [isHidden, setIsHidden] = React.useState();
-  function handleClick() {
-    setIsSelected((prevShow) => !prevShow);
-    setIsHidden(!props.navCard)
-  }
   
-  
+
   return (
     <div
       key={props.title}
-      onClick={handleClick}
-      className={`tarot ${isSelected ? `expand` : ``} `}
+      onClick={props.handleClick}
+      className={`tarot ${props.isSelected ? `expand tarot-to-nav` : ``} ${props.title}`}
+      style={{border: props.lights? "5px black solid" : "5px white solid" }}
     >
-      <img src={props.lights ? props.imageL : props.imageD} className={isSelected ? `clicked` : ``}></img>
+      <img
+        src={props.lights ? props.imageL : props.imageD}
+        className={props.isSelected ? `clicked` : ``}
+      ></img>
       <h1 className={props.mode}>{props.title}</h1>
     </div>
   );
