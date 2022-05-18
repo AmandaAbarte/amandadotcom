@@ -4,6 +4,8 @@
   right: 40px;
   display: flex;
   .light-string {
+    position: relative;
+    transition: all 0.5s ease-in-out;
     .string {
       width: 2px;
       height: 90px;
@@ -22,11 +24,14 @@
       width: 2px;
       height: 70px;
       background-color: white;
+      &:hover {
+        height: 100px;
+      }
     }
     .bulb {
       width: 30px;
       transform: rotate(180deg);
-      filter: invert(100%) drop-shadow(4px 4px 10px black);
+      filter: invert(100%) drop-shadow(4px 4px 10px yellow);
     }
   }
 }
@@ -35,4 +40,45 @@
 }
 .darkmode {
   color: white;
+}
+.pullStringOn {
+  animation: pullStringOn 0.5s ease-in-out forwards;
+  //   margin-top: -20px;
+}
+@keyframes pullStringOn {
+  0% {
+    height: 90px;
+    // transform: translateX(0);
+    // margin-top: 0;
+  }
+  50% {
+    height: 120px;
+    // transform: translateX(50px);
+    // margin-top: -20px;
+  }
+  100% {
+    height: 80px;
+    // transform: translateX(0);
+    // margin-top: 10px;
+  }
+}
+.pullStringOff {
+  animation: pullStringOff 0.5s ease-in-out forwards;
+}
+@keyframes pullStringOff {
+  0% {
+    height: 70px;
+    // transform: translateX(0);
+    // margin-top: 0;
+  }
+  50% {
+    height: 50px;
+    // transform: translateX(50px);
+    // margin-top: -20px;
+  }
+  100% {
+    height: 100px;
+    // transform: translateX(0);
+    // margin-top: 10px;
+  }
 }

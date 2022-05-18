@@ -14,7 +14,8 @@ function App() {
   const mode = lightsOn ? `lightmode` : `darkmode`;
   return (
     <div className={`App app ${mode} `} style={{height: "1000px", backgroundColor: lightsOn? "white" : "black"}}>
-      <Lighting switchLights={switchLights}/>
+      <Lighting switchLights={switchLights}
+      lights={lightsOn}/>
       {/* <Loader /> */}
       <Nav switchLights={switchLights}
       mode={mode}
