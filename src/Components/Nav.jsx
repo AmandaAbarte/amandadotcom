@@ -11,9 +11,9 @@ import Card from "./Card";
 
 export default function Nav(props) {
   const [cards, setCards] = React.useState([
-    { title: "Portfolio", imageD: birdD , imageL: birdL},
-    { title: "About", imageD: roseD, imageL: roseL },
-    { title: "Contact", imageD: snakeD, imageL: snakeL },
+    { title: "Portfolio", imageD: birdD , imageL: birdL, navCard: false},
+    { title: "About", imageD: roseD, imageL: roseL, navCard: false},
+    { title: "Contact", imageD: snakeD, imageL: snakeL, navCard: false},
   ]);
 
   const allCards = cards.map((card) => {
@@ -25,6 +25,7 @@ export default function Nav(props) {
         imageL={card.imageL}
         mode={props.mode}
         lights={props.lights}
+        navCard={card.navCard}
       />
     );
   });

@@ -8,11 +8,11 @@ export default function Lighting(props) {
       style={{ filter: props.lights ? "invert(100%)" : "" }}
     >
       <div className={`light-string `} onClick={props.switchLights}>
-        <div className={`string ${props.lights ? `pullStringOn` : ``}`}></div>
+        <div className={`string ${props.lights ? `pullStringOn` : `pullStringOff`}`}></div>
         <div className="ball"></div>
       </div>
       <div className="light-hang">
-        <div className={`string ${props.lights ? `pullStringOff` : ``}`}></div>
+        <div className={`string ${props.lights ? `bulbOn` : `bulbOff`}`}></div>
         <img src={lamp} className="bulb"></img>
       </div>
     </div>
