@@ -1,6 +1,5 @@
 body {
   background-color: red;
-
   height: 100%;
 }
 * {
@@ -16,3 +15,6 @@ body {
 @import "./Styling/Loader";
 @import "./Styling/Typography";
 @import "./Styling/Mode";
+@import "./Styling/About";
+@import "./Styling/Portfolio";
+@import "./Styling/Contact";

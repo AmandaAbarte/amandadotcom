@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 
+
 export default function Card(props) {
   
 
@@ -7,8 +8,10 @@ export default function Card(props) {
     <div
       key={props.title}
       onClick={props.handleClick}
-      className={`tarot ${props.isSelected ? `expand tarot-to-nav` : ``} ${props.title}`}
-      style={{border: props.lights? "5px black solid" : "5px white solid" }}
+      className={`tarot ${props.isSelected ? `expand tarot-to-nav` : ``} ${
+        props.title
+      }`}
+      style={{ border: props.lights ? "5px black solid" : "5px white solid" }}
     >
       <img
         src={props.lights ? props.imageL : props.imageD}

@@ -303,4 +303,39 @@ h1 {
     height: 70px;
   }
 }
+
+.content-container {
+  position: fixed;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  background-color: aqua;
+}
+
+.content-container .about-container {
+  position: absolute;
+  top: 50%;
+  right: 30%;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+
+.content-container .portfolio-container {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  width: 100px;
+  height: 100px;
+  background-color: green;
+}
+
+.content-container .contact-container {
+  position: absolute;
+  top: 50%;
+  right: 20%;
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+}
 /*# sourceMappingURL=App.css.map */
