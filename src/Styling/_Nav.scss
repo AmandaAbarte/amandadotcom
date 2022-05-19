@@ -22,7 +22,8 @@
       display: flex;
       flex-direction: column;
       &:hover {
-          cursor: pointer;
+        cursor: pointer;
+        transform: translateY(5%);
       }
       img {
         width: 100%;
@@ -108,8 +109,8 @@
 .tarot-to-nav {
   transform: translateY(-88%);
   &:hover {
-      transform: translateY(-84%);
-      cursor: pointer;
+    transform: translateY(-84%);
+    cursor: pointer;
   }
 }
 // @keyframes hidetext {
