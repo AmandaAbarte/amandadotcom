@@ -40,6 +40,10 @@ body {
   flex-direction: column;
 }
 
+.cards .tarot-container .tarot:hover {
+  cursor: pointer;
+}
+
 .cards .tarot-container .tarot img {
   width: 100%;
   border-radius: 10px;
@@ -75,7 +79,7 @@ body {
 }
 
 .tarot-to-nav:hover {
-  transform: translateY(-86%);
+  transform: translateY(-84%);
   cursor: pointer;
 }
 
@@ -316,6 +320,7 @@ h1 {
   height: 100%;
   background-color: black;
   color: white;
+  transition: all 0.5s ease-in-out;
 }
 
 .content-container .about-container .border {
@@ -330,14 +335,15 @@ h1 {
   border-radius: 10px;
   font-family: 'Zen Loop', cursive;
   font-style: italic;
+  transition: all 0.5s ease-in-out;
 }
 
 .content-container .about-container .border .profile {
   position: absolute;
   height: 150px;
   width: 150px;
-  top: -25px;
-  right: -25px;
+  top: 0px;
+  right: -70px;
   border-radius: 50%;
   border: 2px solid white;
   transition: all 1s ease-in-out;
@@ -374,6 +380,7 @@ h1 {
 
 .content-container .about-container .border .profile:hover {
   animation: rotateContainer 4s linear 1s infinite forwards;
+  cursor: pointer;
 }
 
 .content-container .about-container .border .profile:hover .prof {
@@ -398,6 +405,15 @@ h1 {
 .content-container .about-container .border .profile:hover .prof4 {
   position: absolute;
   bottom: -134px;
+}
+
+.content-container .about-container .border h1 {
+  font-size: xx-large;
+}
+
+.content-container .about-container .border p {
+  margin-top: 50px;
+  font-size: x-large;
 }
 
 @keyframes rotateContainer {

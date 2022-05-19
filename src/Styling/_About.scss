@@ -12,6 +12,7 @@
     height: 100%;
     background-color: black;
     color: white;
+    transition: all 0.5s ease-in-out;
     .border {
       position: relative;
       width: 60%;
@@ -23,12 +24,13 @@
       padding: 2%;
       border-radius: 10px;
       @include primary-font();
+      transition: all 0.5s ease-in-out;
       .profile {
         position: absolute;
         height: 150px;
         width: 150px;
-        top: -25px;
-        right: -25px;
+        top: 0px;
+        right: -70px;
         border-radius: 50%;
         border: 2px solid white;
         // overflow: hidden;
@@ -60,7 +62,8 @@
         &:hover {
           //   height: 300px;
           //   width: 300px;
-            animation: rotateContainer 4s linear 1s infinite forwards;
+          animation: rotateContainer 4s linear 1s infinite forwards;
+          cursor: pointer;
           .prof {
             animation: rotateImages 4s linear 1s infinite forwards;
           }
@@ -81,6 +84,13 @@
             bottom: -134px;
           }
         }
+      }
+      h1 {
+        font-size: xx-large;
+      }
+      p {
+        margin-top: 50px;
+        font-size: x-large;
       }
     }
   }

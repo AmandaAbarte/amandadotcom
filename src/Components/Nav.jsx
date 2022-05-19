@@ -87,10 +87,9 @@ export default function Nav(props) {
       />
     );
   });
-
   //depending on if content is set to active displays different content
   const portfolioCont = mainContent.map((content) => {
-    return content.isActive ? <content.type key={content.name}/> : "";
+    return content.isActive ? <content.type key={content.name} lights={props.lights}/> : "";
   });
   return (
     <>
