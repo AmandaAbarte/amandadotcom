@@ -28,7 +28,9 @@ export default function Nav(props) {
   ]);
 
   function handleClick(title) {
-    setIsSelected((prevShow) => !prevShow);
+      //sets whether bar is at top, if bar is at top then do not change state
+    setIsSelected((prevShow) => prevShow ? prevShow : true);
+    //checks if clicked card matches with content and sets it to true - therefore changing what content is displayed
     setCards((prevCards) => {
       return prevCards.map((card) => {
         return card.title === title
@@ -39,13 +41,12 @@ export default function Nav(props) {
     setMainContent((prevCont) => {
       return prevCont.map((item) => {
         return item.name === title
-          ? { ...item, isActive: !item.isActive }
-          : item;
+          ? { ...item, isActive: true }
+          : {...item, isActive: false};
       });
     });
   }
-  console.log(isSelected);
-  console.log(cards);
+  //maps over all cards and returns a card with different properties passed down
   const allCards = cards.map((card) => {
     return (
       <Card
@@ -62,7 +63,7 @@ export default function Nav(props) {
     );
   });
 
-  
+  //depending on if content is set to active displays different content
   const portfolioCont = mainContent.map((content) => {
       return ( content.isActive? <content.type/> : "")
   });
@@ -77,9 +78,6 @@ export default function Nav(props) {
       </div>
       <div className="content-container">
           {portfolioCont}
-        {/* <Portfolio />
-        <About />
-        <Contact /> */}
       </div>
     </>
   );
