@@ -32,7 +32,6 @@ body {
 
 .cards .tarot-container .tarot {
   position: absolute;
-  width: 300px;
   top: 20%;
   margin: 0 5px;
   border-radius: 10px;
@@ -51,18 +50,6 @@ body {
   font-size: 40px;
 }
 
-.cards .tarot-container .Portfolio {
-  left: 10%;
-}
-
-.cards .tarot-container .Contact {
-  right: 10%;
-}
-
-.cards .tarot-container .About {
-  right: 37%;
-}
-
 .clicked {
   animation: flipForewards 1s ease-in-out forwards;
 }
@@ -76,7 +63,7 @@ body {
 }
 
 .nav-to-top {
-  height: 19%;
+  height: 7%;
 }
 
 .nav-to-top .heading {
@@ -84,7 +71,12 @@ body {
 }
 
 .tarot-to-nav {
-  transform: translateY(-90%);
+  transform: translateY(-88%);
+}
+
+.tarot-to-nav:hover {
+  transform: translateY(-86%);
+  cursor: pointer;
 }
 
 .loader-container {
@@ -197,6 +189,10 @@ h1 {
 .mode .light-string {
   position: relative;
   transition: all 0.5s ease-in-out;
+}
+
+.mode .light-string:hover {
+  cursor: pointer;
 }
 
 .mode .light-string .string {

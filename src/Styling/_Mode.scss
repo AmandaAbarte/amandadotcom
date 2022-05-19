@@ -7,6 +7,9 @@
   .light-string {
     position: relative;
     transition: all 0.5s ease-in-out;
+    &:hover {
+        cursor: pointer;
+    }
     // cursor: url(pointer.png), pointer;
     .string {
       width: 1px;

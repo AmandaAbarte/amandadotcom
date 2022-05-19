@@ -1,9 +1,6 @@
 import React, { useEffect } from "react";
 
-
 export default function Card(props) {
-  
-
   return (
     <div
       key={props.title}
@@ -11,7 +8,11 @@ export default function Card(props) {
       className={`tarot ${props.isSelected ? `expand tarot-to-nav` : ``} ${
         props.title
       }`}
-      style={{ border: props.lights ? "5px black solid" : "5px white solid" }}
+      style={{
+        border: props.lights ? "5px black solid" : "5px white solid",
+        width: props.isSelected ? "150px" : "300px",
+        right: props.styles,
+      }}
     >
       <img
         src={props.lights ? props.imageL : props.imageD}

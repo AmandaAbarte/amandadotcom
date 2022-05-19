@@ -14,22 +14,46 @@ import snakeD from "../assets/cards/SerpentD.png";
 import Card from "./Card";
 
 export default function Nav(props) {
+  const [isSelected, setIsSelected] = React.useState(false);
+//   const portNav = isSelected ? "95%" : "90%" ;
+//   const abNav =  isSelected ? "90%" : "30%";
+//   const conNav =  isSelected ? "50%" : "37%" ;
   const [cards, setCards] = React.useState([
-    { title: "Portfolio", imageD: birdD, imageL: birdL, isActive: false },
-    { title: "About", imageD: roseD, imageL: roseL, isActive: false },
-    { title: "Contact", imageD: snakeD, imageL: snakeL, isActive: false },
+    {
+      title: "Portfolio",
+      imageD: birdD,
+      imageL: birdL,
+      isActive: false,
+      styleDef: "10%",
+      styleNav: "80%",
+    },
+    {
+      title: "About",
+      imageD: roseD,
+      imageL: roseL,
+      isActive: false,
+      styleDef: "40%",
+      styleNav: "70%",
+    },
+    {
+      title: "Contact",
+      imageD: snakeD,
+      imageL: snakeL,
+      isActive: false,
+      styleDef: "70%",
+      styleNav: "60%",
+    },
   ]);
   //isSelected means is the nav bar at the top
-  const [isSelected, setIsSelected] = React.useState(false);
   const [mainContent, setMainContent] = React.useState([
-    { type: Portfolio, name: "Portfolio", isActive: false},
+    { type: Portfolio, name: "Portfolio", isActive: false },
     { type: About, name: "About", isActive: false },
     { type: Contact, name: "Contact", isActive: false },
   ]);
 
   function handleClick(title) {
-      //sets whether bar is at top, if bar is at top then do not change state
-    setIsSelected((prevShow) => prevShow ? prevShow : true);
+    //sets whether bar is at top, if bar is at top then do not change state
+    setIsSelected((prevShow) => (prevShow ? prevShow : true));
     //checks if clicked card matches with content and sets it to true - therefore changing what content is displayed
     setCards((prevCards) => {
       return prevCards.map((card) => {
@@ -42,7 +66,7 @@ export default function Nav(props) {
       return prevCont.map((item) => {
         return item.name === title
           ? { ...item, isActive: true }
-          : {...item, isActive: false};
+          : { ...item, isActive: false };
       });
     });
   }
@@ -59,13 +83,14 @@ export default function Nav(props) {
         isSelected={isSelected}
         isActive={card.isActive}
         handleClick={() => handleClick(card.title)}
+        styles={isSelected? card.styleNav: card.styleDef}
       />
     );
   });
 
   //depending on if content is set to active displays different content
   const portfolioCont = mainContent.map((content) => {
-      return ( content.isActive? <content.type/> : "")
+    return content.isActive ? <content.type key={content.name}/> : "";
   });
   return (
     <>
@@ -76,9 +101,7 @@ export default function Nav(props) {
         <h1 className={`${props.mode} heading`}>Pick a Card</h1>
         <div className={`tarot-container `}>{allCards}</div>
       </div>
-      <div className="content-container">
-          {portfolioCont}
-      </div>
+      <div className="content-container">{portfolioCont}</div>
     </>
   );
 }

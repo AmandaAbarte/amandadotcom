@@ -13,18 +13,8 @@
     transition: all 0.5s ease-in-out;
   }
   .tarot-container {
-    
-    // display: flex;
-    // flex-direction: row;
-    // align-items: center;
-    // justify-content: center;
-    // flex-wrap: wrap;
     .tarot {
       position: absolute;
-      //   min-width: 28%;
-      //   max-width: 250px;
-      //   max-height: 100%;
-      width: 300px;
       top: 20%;
       margin: 0 5px;
       border-radius: 10px;
@@ -41,13 +31,13 @@
       }
     }
     .Portfolio {
-        left: 10%;
+        // left: 10%;
     }
     .Contact {
-        right: 10%;
+        // right: 10%;
     }
     .About {
-        right: 37%;
+        // right: 37%;
     }
   }
 }
@@ -113,7 +103,7 @@
 }
 
 .nav-to-top {
-  height: 19%;
+  height: 7%;
   .heading {
     display: none;
     // transform: translateY(-150%);
@@ -122,7 +112,11 @@
 }
 
 .tarot-to-nav {
-  transform: translateY(-90%);
+  transform: translateY(-88%);
+  &:hover {
+      transform: translateY(-86%);
+      cursor: pointer;
+  }
 }
 // @keyframes hidetext {
 //     0%{
