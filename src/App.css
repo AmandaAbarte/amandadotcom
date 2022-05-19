@@ -310,11 +310,112 @@ h1 {
 
 .content-container .about-container {
   position: absolute;
-  top: 50%;
-  right: 30%;
-  width: 100px;
-  height: 100px;
-  background-color: red;
+  top: 0%;
+  right: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  color: white;
+}
+
+.content-container .about-container .border {
+  position: relative;
+  width: 60%;
+  height: 500px;
+  top: 20%;
+  left: 20%;
+  margin: 0;
+  border: 2px solid white;
+  padding: 2%;
+  border-radius: 10px;
+  font-family: 'Zen Loop', cursive;
+  font-style: italic;
+}
+
+.content-container .about-container .border .profile {
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  top: -25px;
+  right: -25px;
+  border-radius: 50%;
+  border: 2px solid white;
+  transition: all 1s ease-in-out;
+}
+
+.content-container .about-container .border .profile .prof {
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid white;
+  width: 148px;
+  height: 148px;
+  transition: all 1s ease-in-out;
+}
+
+.content-container .about-container .border .profile .prof1 {
+  position: absolute;
+  top: 0px;
+}
+
+.content-container .about-container .border .profile .prof2 {
+  position: absolute;
+  left: 0px;
+}
+
+.content-container .about-container .border .profile .prof3 {
+  position: absolute;
+  right: 0;
+}
+
+.content-container .about-container .border .profile .prof4 {
+  position: absolute;
+  bottom: 0;
+}
+
+.content-container .about-container .border .profile:hover {
+  animation: rotateContainer 4s linear 1s infinite forwards;
+}
+
+.content-container .about-container .border .profile:hover .prof {
+  animation: rotateImages 4s linear 1s infinite forwards;
+}
+
+.content-container .about-container .border .profile:hover .prof1 {
+  position: absolute;
+  top: -134px;
+}
+
+.content-container .about-container .border .profile:hover .prof2 {
+  position: absolute;
+  left: -134px;
+}
+
+.content-container .about-container .border .profile:hover .prof3 {
+  position: absolute;
+  right: -134px;
+}
+
+.content-container .about-container .border .profile:hover .prof4 {
+  position: absolute;
+  bottom: -134px;
+}
+
+@keyframes rotateContainer {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateImages {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
 }
 
 .content-container .portfolio-container {

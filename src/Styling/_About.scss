@@ -1,15 +1,104 @@
 .content-container {
-    position: fixed;
-    z-index: -1;
-    height:100%;
+  position: fixed;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  background-color: aqua;
+  .about-container {
+    position: absolute;
+    top: 0%;
+    right: 0%;
     width: 100%;
-    background-color: aqua;
-    .about-container{
+    height: 100%;
+    background-color: black;
+    color: white;
+    .border {
+      position: relative;
+      width: 60%;
+      height: 500px;
+      top: 20%;
+      left: 20%;
+      margin: 0;
+      border: 2px solid white;
+      padding: 2%;
+      border-radius: 10px;
+      @include primary-font();
+      .profile {
         position: absolute;
-        top: 50%;
-        right: 30%;
-        width: 100px;
-        height: 100px;
-        background-color: red;
+        height: 150px;
+        width: 150px;
+        top: -25px;
+        right: -25px;
+        border-radius: 50%;
+        border: 2px solid white;
+        // overflow: hidden;
+        transition: all 1s ease-in-out;
+        .prof {
+          object-fit: cover;
+          border-radius: 50%;
+          border: 2px solid white;
+          width: 148px;
+          height: 148px;
+          transition: all 1s ease-in-out;
+        }
+        .prof1 {
+          position: absolute;
+          top: 0px;
+        }
+        .prof2 {
+          position: absolute;
+          left: 0px;
+        }
+        .prof3 {
+          position: absolute;
+          right: 0;
+        }
+        .prof4 {
+          position: absolute;
+          bottom: 0;
+        }
+        &:hover {
+          //   height: 300px;
+          //   width: 300px;
+            animation: rotateContainer 4s linear 1s infinite forwards;
+          .prof {
+            animation: rotateImages 4s linear 1s infinite forwards;
+          }
+          .prof1 {
+            position: absolute;
+            top: -134px;
+          }
+          .prof2 {
+            position: absolute;
+            left: -134px;
+          }
+          .prof3 {
+            position: absolute;
+            right: -134px;
+          }
+          .prof4 {
+            position: absolute;
+            bottom: -134px;
+          }
+        }
+      }
     }
+  }
+}
+
+@keyframes rotateContainer {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotateImages {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
 }
