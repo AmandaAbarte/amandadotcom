@@ -6,8 +6,19 @@ import prof4 from "../assets/profile(4).png";
 
 export default function About(props) {
   return (
-    <div className="about-container" style={{backgroundColor: props.lights? "white" : "black"}}>
-      <div className="border" style={{border: props.lights ? "2px solid black" : "2px solid white", color: props.lights? "white" : "black", backgroundColor: props.lights? "black" : "white", boxShadow: props.lights? "2px 2px 10px black" : "2px 2px 10px white"}}>
+    <div
+      className="about-container"
+      style={{ backgroundColor: props.lights ? "white" : "black" }}
+    >
+      <div
+        className="border"
+        style={{
+          border: props.lights ? "2px solid black" : "2px solid white",
+          color: props.lights ? "white" : "black",
+          backgroundColor: props.lights ? "black" : "white",
+          boxShadow: props.lights ? "2px 2px 10px black" : "2px 2px 10px white",
+        }}
+      >
         <h1>Amanda Abarte</h1>
         <h2>Front-end Dev, Designer, Artist</h2>
         <div className="profile">
@@ -18,9 +29,24 @@ export default function About(props) {
         </div>
         <p>Hi, Im Amanda, Im a Front-end Web Developer. designer and artist.</p>
         <p>
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente corrupti, ea labore magnam inventore necessitatibus sit suscipit omnis dolorem, <br/>accusamus quos possimus reprehenderit porro sunt ut provident maiores quis hic. <br/>
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse iusto, vel impedit earum repellat delectus veritatis corporis at laborum alias? Cupiditate repudiandae quae vero totam praesentium eos ea ab. Vel?
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+          corrupti, ea labore magnam inventore necessitatibus sit suscipit omnis
+          dolorem, <br />
+          accusamus quos possimus reprehenderit porro sunt ut provident maiores
+          quis hic. <br />
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse iusto,
+          vel impedit earum repellat delectus veritatis corporis at laborum
+          alias? Cupiditate repudiandae quae vero totam praesentium eos ea ab.
+          Vel?
         </p>
+      </div>
+      <div className="icons">
+        <i className="devicon-javascript-plain"></i>
+        <i className="devicon-css3-plain-wordmark"></i>
+        <i className="devicon-sass-plain"></i>
+        <i className="devicon-html5-plain-wordmark"></i>
+        <i className="devicon-bootstrap-plain-wordmark"></i>
+        <i className="devicon-react-original-wordmark"></i>
       </div>
     </div>
   );

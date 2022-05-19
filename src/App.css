@@ -414,7 +414,18 @@ h1 {
 
 .content-container .about-container .border p {
   margin-top: 50px;
+  font-weight: bold;
   font-size: x-large;
+}
+
+.content-container .icons {
+  position: absolute;
+  left: 20%;
+  bottom: 10%;
+}
+
+.content-container .icons i {
+  font-size: 50px;
 }
 
 @keyframes rotateContainer {
