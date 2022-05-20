@@ -1,4 +1,5 @@
 import React from "react";
+import { useMediaQuery } from "react-responsive";
 
 import Portfolio from "./Portfolio";
 import About from "./About";
@@ -14,6 +15,11 @@ import snakeD from "../assets/cards/SerpentD.png";
 import Card from "./Card";
 
 export default function Nav(props) {
+  
+  const isTabletOrMobile = useMediaQuery({ query: "(min-width: 0px)" });
+  const isDesktopOrLaptop = useMediaQuery({ query: "(min-width: 1024px)" });
+  const isBigScreen = useMediaQuery({ query: "(min-width: 1624px)" });
+
   const [isSelected, setIsSelected] = React.useState(false);
 //   const portNav = isSelected ? "95%" : "90%" ;
 //   const abNav =  isSelected ? "90%" : "30%";
@@ -25,7 +31,7 @@ export default function Nav(props) {
       imageL: birdL,
       isActive: false,
       styleDef: "10%",
-      styleNav: "80%",
+      styleNav: "40%",
     },
     {
       title: "About",
@@ -33,7 +39,7 @@ export default function Nav(props) {
       imageL: roseL,
       isActive: false,
       styleDef: "40%",
-      styleNav: "70%",
+      styleNav: "25%",
     },
     {
       title: "Contact",
@@ -41,7 +47,7 @@ export default function Nav(props) {
       imageL: snakeL,
       isActive: false,
       styleDef: "70%",
-      styleNav: "60%",
+      styleNav: "10%",
     },
   ]);
   //isSelected means is the nav bar at the top

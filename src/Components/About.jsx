@@ -4,6 +4,9 @@ import prof2 from "../assets/profile(2).png";
 import prof3 from "../assets/profile(3).png";
 import prof4 from "../assets/profile(4).png";
 
+import birdL from "../assets/cards/FlightL.png";
+import birdD from "../assets/cards/FlightD.png";
+
 export default function About(props) {
   return (
     <div
@@ -17,6 +20,7 @@ export default function About(props) {
           color: props.lights ? "white" : "black",
           backgroundColor: props.lights ? "black" : "white",
           boxShadow: props.lights ? "2px 2px 10px black" : "2px 2px 10px white",
+          backgroundImage: props.lights ? `url(${birdL})` : `url(${birdD})`,
         }}
       >
         <h1>Amanda Abarte</h1>
@@ -40,13 +44,20 @@ export default function About(props) {
           Vel?
         </p>
       </div>
-      <div className="icons">
+      <div
+        className="icons"
+        style={{ color: props.lights ? "black" : "white" }}
+      >
         <i className="devicon-javascript-plain"></i>
         <i className="devicon-css3-plain-wordmark"></i>
         <i className="devicon-sass-plain"></i>
         <i className="devicon-html5-plain-wordmark"></i>
         <i className="devicon-bootstrap-plain-wordmark"></i>
         <i className="devicon-react-original-wordmark"></i>
+        <i className="devicon-photoshop-line"></i>
+        <i className="devicon-wordpress-plain-wordmark"></i>
+
+        {/* <p className="turn-lights"> Turn the lights off </p> */}
       </div>
     </div>
   );

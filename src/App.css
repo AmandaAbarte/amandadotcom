@@ -55,14 +55,6 @@ body {
   font-size: 40px;
 }
 
-.clicked {
-  animation: flipForewards 1s ease-in-out forwards;
-}
-
-.unclicked {
-  animation: flipBackwards 2s ease-in-out forwards;
-}
-
 .navCard {
   background-color: red;
 }
@@ -329,7 +321,7 @@ h1 {
   width: 60%;
   height: 500px;
   top: 20%;
-  left: 20%;
+  left: 10%;
   margin: 0;
   border: 2px solid white;
   padding: 2%;
@@ -337,6 +329,9 @@ h1 {
   font-family: 'Zen Loop', cursive;
   font-style: italic;
   transition: all 0.5s ease-in-out;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: -20px;
 }
 
 .content-container .about-container .border .profile {
@@ -346,7 +341,6 @@ h1 {
   top: 0px;
   right: -70px;
   border-radius: 50%;
-  border: 2px solid white;
   transition: all 1s ease-in-out;
 }
 
@@ -376,16 +370,16 @@ h1 {
 
 .content-container .about-container .border .profile .prof4 {
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
 }
 
 .content-container .about-container .border .profile:hover {
-  animation: rotateContainer 4s linear 1s infinite forwards;
+  animation: rotateContainer 4s linear infinite forwards;
   cursor: pointer;
 }
 
 .content-container .about-container .border .profile:hover .prof {
-  animation: rotateImages 4s linear 1s infinite forwards;
+  animation: rotateImages 4s linear infinite forwards;
 }
 
 .content-container .about-container .border .profile:hover .prof1 {
@@ -426,6 +420,15 @@ h1 {
 
 .content-container .icons i {
   font-size: 50px;
+}
+
+.content-container .icons .turn-lights {
+  font-family: 'Zen Loop', cursive;
+  font-style: italic;
+  font-size: 30px;
+  color: black;
+  position: absolute;
+  top: -50px;
 }
 
 @keyframes rotateContainer {

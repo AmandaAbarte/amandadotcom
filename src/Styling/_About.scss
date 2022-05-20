@@ -18,13 +18,16 @@
       width: 60%;
       height: 500px;
       top: 20%;
-      left: 20%;
+      left: 10%;
       margin: 0;
       border: 2px solid white;
       padding: 2%;
       border-radius: 10px;
       @include primary-font();
       transition: all 0.5s ease-in-out;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: -20px;
       .profile {
         position: absolute;
         height: 150px;
@@ -32,7 +35,7 @@
         top: 0px;
         right: -70px;
         border-radius: 50%;
-        border: 2px solid white;
+        // border: 2px solid white;
         // overflow: hidden;
         transition: all 1s ease-in-out;
         .prof {
@@ -57,15 +60,15 @@
         }
         .prof4 {
           position: absolute;
-          bottom: 0;
+          bottom: -1px;
         }
         &:hover {
           //   height: 300px;
           //   width: 300px;
-          animation: rotateContainer 4s linear 1s infinite forwards;
+          animation: rotateContainer 4s linear infinite forwards;
           cursor: pointer;
           .prof {
-            animation: rotateImages 4s linear 1s infinite forwards;
+            animation: rotateImages 4s linear infinite forwards;
           }
           .prof1 {
             position: absolute;
@@ -101,6 +104,13 @@
     bottom: 10%;
     i{
       font-size: 50px;
+    }
+    .turn-lights{
+      @include primary-font();
+      font-size: 30px;
+      color: black;
+      position: absolute;
+      top: -50px;
     }
   }
 }
