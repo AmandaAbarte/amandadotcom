@@ -1,4 +1,5 @@
 import React from "react";
+import sample from "../assets/sample.png";
 
 export default function Portfolio(props) {
   return (
@@ -9,7 +10,24 @@ export default function Portfolio(props) {
         color: props.lights ? "black" : "white",
       }}
     >
-      <h1>This is where porfolio will be</h1>
+      <div className="item-container">
+          <div className="item">
+              <img src={sample} className="item-image"></img>
+              <div className="item-info">
+                  <h1>Website Name</h1>
+                  <p>Website description and what languages/ libraries used maybe?</p>
+                  <a href="#">Link to the GitHub Repo</a>
+              </div>
+          </div>
+          <div className="item item-right">
+              <img src={sample} className="item-image"></img>
+              <div className="item-info">
+                  <h1>Website Name</h1>
+                  <p>Website description and what languages/ libraries used maybe?</p>
+                  <a href="#">Link to the GitHub Repo</a>
+              </div>
+          </div>
+      </div>
       <div
         className="icons"
         style={{ color: props.lights ? "black" : "white" }}
