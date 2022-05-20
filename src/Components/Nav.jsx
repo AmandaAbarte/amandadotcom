@@ -1,5 +1,4 @@
 import React from "react";
-import { useMediaQuery } from "react-responsive";
 
 import Portfolio from "./Portfolio";
 import About from "./About";
@@ -16,9 +15,6 @@ import Card from "./Card";
 
 export default function Nav(props) {
   
-  const isTabletOrMobile = useMediaQuery({ query: "(min-width: 0px)" });
-  const isDesktopOrLaptop = useMediaQuery({ query: "(min-width: 1024px)" });
-  const isBigScreen = useMediaQuery({ query: "(min-width: 1624px)" });
 
   const [isSelected, setIsSelected] = React.useState(false);
 //   const portNav = isSelected ? "95%" : "90%" ;
@@ -94,7 +90,7 @@ export default function Nav(props) {
     );
   });
   //depending on if content is set to active displays different content
-  const portfolioCont = mainContent.map((content) => {
+  const Cont = mainContent.map((content) => {
     return content.isActive ? <content.type key={content.name} lights={props.lights}/> : "";
   });
   return (
@@ -106,7 +102,7 @@ export default function Nav(props) {
         <h1 className={`${props.mode} heading`}>Pick a Card</h1>
         <div className={`tarot-container `}>{allCards}</div>
       </div>
-      <div className="content-container">{portfolioCont}</div>
+      <div className="content-container">{Cont}</div>
     </>
   );
 }
