@@ -28,6 +28,7 @@
       background-size: cover;
       background-repeat: no-repeat;
       background-position: -20px;
+      animation: floatIn 0.5s ease-in-out forwards;
       .profile {
         position: absolute;
         height: 150px;
@@ -98,21 +99,6 @@
       }
     }
   }
-  .icons {
-    position: absolute;
-    left: 20%;
-    bottom: 10%;
-    i{
-      font-size: 50px;
-    }
-    .turn-lights{
-      @include primary-font();
-      font-size: 30px;
-      color: black;
-      position: absolute;
-      top: -50px;
-    }
-  }
 }
 
 @keyframes rotateContainer {
@@ -129,5 +115,16 @@
   }
   100% {
     transform: rotate(-360deg);
+  }
+}
+
+@keyframes floatIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

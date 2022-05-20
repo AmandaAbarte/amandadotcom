@@ -332,6 +332,7 @@ h1 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: -20px;
+  animation: floatIn 0.5s ease-in-out forwards;
 }
 
 .content-container .about-container .border .profile {
@@ -412,25 +413,6 @@ h1 {
   font-size: x-large;
 }
 
-.content-container .icons {
-  position: absolute;
-  left: 20%;
-  bottom: 10%;
-}
-
-.content-container .icons i {
-  font-size: 50px;
-}
-
-.content-container .icons .turn-lights {
-  font-family: 'Zen Loop', cursive;
-  font-style: italic;
-  font-size: 30px;
-  color: black;
-  position: absolute;
-  top: -50px;
-}
-
 @keyframes rotateContainer {
   0% {
     transform: rotate(0deg);
@@ -449,6 +431,17 @@ h1 {
   }
 }
 
+@keyframes floatIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .content-container .portfolio-container {
   position: absolute;
   width: 100%;
@@ -460,6 +453,27 @@ h1 {
   position: absolute;
   top: 30%;
   left: 30%;
+  animation: floatIn 0.5s ease-in-out forwards;
+}
+
+.content-container .icons {
+  position: absolute;
+  left: 20%;
+  bottom: 10%;
+  animation: floatIn 0.5s ease-in-out forwards;
+}
+
+.content-container .icons i {
+  font-size: 50px;
+}
+
+.content-container .icons .turn-lights {
+  font-family: 'Zen Loop', cursive;
+  font-style: italic;
+  font-size: 30px;
+  color: black;
+  position: absolute;
+  top: -50px;
 }
 
 .content-container .contact-container {
