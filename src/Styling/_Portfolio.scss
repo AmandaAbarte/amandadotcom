@@ -10,6 +10,7 @@
       position: absolute;
       top: 15%;
       left: 10%;
+      width: 50%;
       animation: floatIn 0.5s ease-in-out forwards;
       .item {
         border-top: 2px solid white;
@@ -19,23 +20,65 @@
 
         .item-image {
           width: 300px;
+          border: 2px solid black;
         }
         .item-info {
           margin: 0 15px;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          h1 {
+            margin: 0;
+          }
         }
       }
       .item-right {
         flex-direction: row-reverse;
+        .item-info {
+          align-items: flex-end;
+        }
       }
     }
   }
   .icons {
     position: absolute;
-    left: 15%;
-    top: 10%;
+    width: 50%;
+    left: 10%;
+    top: 12%;
     animation: floatIn 0.5s ease-in-out forwards;
+    display: flex;
+    justify-content: space-evenly;
     i {
       font-size: 50px;
+      transition: all 0.3s ease-in-out;
+    }
+    &:hover {
+      cursor: pointer;
+
+      .devicon-javascript-plain {
+        color: rgb(0, 143, 98);
+      }
+      .devicon-css3-plain-wordmark {
+        color: rgb(255, 221, 0);
+      }
+      .devicon-sass-plain {
+        color: orange;
+      }
+      .devicon-html5-plain-wordmark {
+        color: rgb(255, 62, 62);
+      }
+      .devicon-bootstrap-plain-wordmark {
+        color: palevioletred;
+      }
+      .devicon-react-original-wordmark {
+        color: violet;
+      }
+      .devicon-photoshop-line {
+        color: purple;
+      }
+      .devicon-wordpress-plain-wordmark {
+        color: rgb(65, 65, 255);
+      }
     }
     .turn-lights {
       @include primary-font();

@@ -371,7 +371,7 @@ h1 {
 
 .content-container .about-container .border .profile .prof4 {
   position: absolute;
-  bottom: -1px;
+  bottom: -2px;
 }
 
 .content-container .about-container .border .profile:hover {
@@ -453,6 +453,7 @@ h1 {
   position: absolute;
   top: 15%;
   left: 10%;
+  width: 50%;
   animation: floatIn 0.5s ease-in-out forwards;
 }
 
@@ -465,25 +466,77 @@ h1 {
 
 .content-container .portfolio-container .item-container .item .item-image {
   width: 300px;
+  border: 2px solid black;
 }
 
 .content-container .portfolio-container .item-container .item .item-info {
   margin: 0 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.content-container .portfolio-container .item-container .item .item-info h1 {
+  margin: 0;
 }
 
 .content-container .portfolio-container .item-container .item-right {
   flex-direction: row-reverse;
 }
 
+.content-container .portfolio-container .item-container .item-right .item-info {
+  align-items: flex-end;
+}
+
 .content-container .icons {
   position: absolute;
-  left: 15%;
-  top: 10%;
+  width: 50%;
+  left: 10%;
+  top: 12%;
   animation: floatIn 0.5s ease-in-out forwards;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .content-container .icons i {
   font-size: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.content-container .icons:hover {
+  cursor: pointer;
+}
+
+.content-container .icons:hover .devicon-javascript-plain {
+  color: #008f62;
+}
+
+.content-container .icons:hover .devicon-css3-plain-wordmark {
+  color: #ffdd00;
+}
+
+.content-container .icons:hover .devicon-sass-plain {
+  color: orange;
+}
+
+.content-container .icons:hover .devicon-html5-plain-wordmark {
+  color: #ff3e3e;
+}
+
+.content-container .icons:hover .devicon-bootstrap-plain-wordmark {
+  color: palevioletred;
+}
+
+.content-container .icons:hover .devicon-react-original-wordmark {
+  color: violet;
+}
+
+.content-container .icons:hover .devicon-photoshop-line {
+  color: purple;
+}
+
+.content-container .icons:hover .devicon-wordpress-plain-wordmark {
+  color: #4141ff;
 }
 
 .content-container .icons .turn-lights {

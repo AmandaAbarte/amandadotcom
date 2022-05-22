@@ -11,7 +11,7 @@ export default function Portfolio(props) {
       }}
     >
       <div className="item-container">
-          <div className="item">
+          <div className="item" style={{borderTop: props.lights? "2px solid black" :"2px solid white"}}>
               <img src={sample} className="item-image"></img>
               <div className="item-info">
                   <h1>Website Name</h1>
@@ -19,7 +19,7 @@ export default function Portfolio(props) {
                   <a href="#">Link to the GitHub Repo</a>
               </div>
           </div>
-          <div className="item item-right">
+          <div className="item item-right" style={{borderTop: props.lights? "2px solid black" :"2px solid white"}}s>
               <img src={sample} className="item-image"></img>
               <div className="item-info">
                   <h1>Website Name</h1>
