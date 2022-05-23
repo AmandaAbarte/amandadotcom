@@ -474,10 +474,10 @@ h1 {
   top: 15%;
   left: 10%;
   width: 50%;
-  animation: floatIn 0.5s ease-in-out forwards;
 }
 
 .content-container .portfolio-container .item-container .item {
+  animation: floatLeft 0.5s ease-in-out forwards;
   border-top: 2px solid white;
   display: flex;
   margin-top: 30px;
@@ -501,6 +501,7 @@ h1 {
 }
 
 .content-container .portfolio-container .item-container .item-right {
+  animation: floatRight 0.5s ease-in-out forwards;
   flex-direction: row-reverse;
 }
 
@@ -566,6 +567,28 @@ h1 {
   color: black;
   position: absolute;
   top: -50px;
+}
+
+@keyframes floatRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes floatLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .content-container .contact-container {
