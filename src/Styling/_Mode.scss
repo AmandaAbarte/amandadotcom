@@ -8,7 +8,8 @@
     position: relative;
     transition: all 0.5s ease-in-out;
     &:hover {
-        cursor: pointer;
+      animation: swinging 2s linear infinite;
+      cursor: pointer;
     }
     // cursor: url(pointer.png), pointer;
     .string {
@@ -130,3 +131,21 @@
   }
 }
 
+@keyframes swinging {
+  0% {
+    transform: rotate(0deg);
+    transform-origin: top center;
+  }
+  40% {
+    transform: rotate(7deg);
+    transform-origin: top center;
+  }
+  66% {
+    transform: rotate(-7deg);
+    transform-origin: top center;
+  }
+  100% {
+    transform: rotate(0deg);
+    transform-origin: top center;
+  }
+}
