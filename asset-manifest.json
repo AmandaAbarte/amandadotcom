@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/amandadotcom/static/css/main.e7bc5a2a.css",
+    "main.js": "/amandadotcom/static/js/main.7d5f571b.js",
+    "static/js/787.ef31bc14.chunk.js": "/amandadotcom/static/js/787.ef31bc14.chunk.js",
+    "static/media/profile(4).png": "/amandadotcom/static/media/profile(4).b18c0e1261a05b7fb028.png",
+    "static/media/profile(2).png": "/amandadotcom/static/media/profile(2).24825b7f3c3869512834.png",
+    "static/media/profile(3).png": "/amandadotcom/static/media/profile(3).2161ee90ca89edd5346d.png",
+    "static/media/profile(1).png": "/amandadotcom/static/media/profile(1).a8e95d3741962a853599.png",
+    "static/media/BloomL.png": "/amandadotcom/static/media/BloomL.e758d0edd3134bd261a2.png",
+    "static/media/BloomD.png": "/amandadotcom/static/media/BloomD.cb7c4a07a9d64335c920.png",
+    "static/media/SerpentL.png": "/amandadotcom/static/media/SerpentL.d10d4425bf4ca4962d27.png",
+    "static/media/SerpentD.png": "/amandadotcom/static/media/SerpentD.9f585dc7643cc51e7924.png",
+    "static/media/sample.png": "/amandadotcom/static/media/sample.24fd3b0003f447b1c3de.png",
+    "static/media/FlightD.png": "/amandadotcom/static/media/FlightD.bc44767a1a75ab9befbd.png",
+    "static/media/FlightL.png": "/amandadotcom/static/media/FlightL.e6ed7d49794269990ebc.png",
+    "static/media/lightbulb.png": "/amandadotcom/static/media/lightbulb.cc2c13a6868f07b72344.png",
+    "static/media/Planet(2).png": "/amandadotcom/static/media/Planet(2).8a389d70ab3d45d89572.png",
+    "static/media/Planet(5).png": "/amandadotcom/static/media/Planet(5).f03e607b8422d5ed6c01.png",
+    "static/media/Planet(3).png": "/amandadotcom/static/media/Planet(3).88460639306b3e2ad8ac.png",
+    "static/media/Planet(1).png": "/amandadotcom/static/media/Planet(1).347773d973755d0cffac.png",
+    "static/media/Planet(4).png": "/amandadotcom/static/media/Planet(4).4e56bdf7d7e6686728a6.png",
+    "index.html": "/amandadotcom/index.html",
+    "main.e7bc5a2a.css.map": "/amandadotcom/static/css/main.e7bc5a2a.css.map",
+    "main.7d5f571b.js.map": "/amandadotcom/static/js/main.7d5f571b.js.map",
+    "787.ef31bc14.chunk.js.map": "/amandadotcom/static/js/787.ef31bc14.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e7bc5a2a.css",
+    "static/js/main.7d5f571b.js"
+  ]
+}
