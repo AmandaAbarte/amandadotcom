@@ -11,7 +11,9 @@ export default function About(props) {
   return (
     <div
       className="about-container"
-      style={{ backgroundColor: props.lights ? "white" : "black" }}
+      style={{ backgroundColor: props.lights ? "white" : "black",
+      // backgroundImage: props.lights ? `url(${birdD})` : `url(${birdL})`,
+     }}
     >
       <div
         className="border"
@@ -19,7 +21,6 @@ export default function About(props) {
           border: props.lights ? "2px solid black" : "2px solid white",
           color: props.lights ? "white" : "black",
           backgroundColor: props.lights ? "black" : "white",
-          backgroundImage: props.lights ? `url(${birdL})` : `url(${birdD})`,
         }}
       >
         <h1>Amanda Abarte</h1>
@@ -30,7 +31,7 @@ export default function About(props) {
           <img src={prof3} className="prof prof3"></img>
           <img src={prof4} className="prof prof4"></img>
         </div>
-        <p>Hi, Im Amanda, Im a Front-end Web Developer. designer and artist.</p>
+        <p>Hi, Im Amanda, Im a Front-end Web Developer, designer and artist.</p>
         <p>
           {/* I have always been an artistic and creativ person. Art - painting, drawing, designing have always been a passion of mine. 
           <br/>

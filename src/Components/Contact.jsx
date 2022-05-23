@@ -34,6 +34,7 @@ export default function Contact(props) {
           name="name"
           value={formData.name}
           required
+          className="name"
         />
         <input
           type="email"
@@ -42,6 +43,7 @@ export default function Contact(props) {
           name="email"
           value={formData.email}
           required
+          className="email"
         />
         <input
           type="text"
@@ -50,6 +52,7 @@ export default function Contact(props) {
           name="message"
           value={formData.message}
           required
+          className="message"
         />
         <input
             type="checkbox"
@@ -58,6 +61,7 @@ export default function Contact(props) {
             onChange={handleInputs}
             name="isHuman"
             required
+            className="checkbox"
         />
         <label htmlFor="isHuman">Are you really human?</label>
         <button className="submit">Submit</button>

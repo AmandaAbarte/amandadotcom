@@ -13,6 +13,9 @@
     background-color: black;
     color: white;
     transition: all 0.5s ease-in-out;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -20px;
     .border {
       position: relative;
       width: 60%;
@@ -23,11 +26,8 @@
       border: 2px solid white;
       padding: 2%;
       border-radius: 10px;
-      @include primary-font();
+      @include tertiary-font();
       transition: all 0.5s ease-in-out;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: -20px;
       animation: floatIn 0.5s ease-in-out forwards;
       .profile {
         position: absolute;
@@ -91,11 +91,11 @@
         }
       }
       h1 {
+        @include tertiary-font();
         font-size: xx-large;
       }
       p {
         margin-top: 50px;
-        font-weight: bold;
         font-size: x-large;
       }
     }

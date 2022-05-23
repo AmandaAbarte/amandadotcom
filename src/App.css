@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Zen+Loop:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap");
 body {
   background-color: red;
   height: 100%;
@@ -334,6 +336,9 @@ h1 {
   background-color: black;
   color: white;
   transition: all 0.5s ease-in-out;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: -20px;
 }
 
 .content-container .about-container .border {
@@ -346,12 +351,8 @@ h1 {
   border: 2px solid white;
   padding: 2%;
   border-radius: 10px;
-  font-family: 'Zen Loop', cursive;
-  font-style: italic;
+  font-family: 'Yeseva One', cursive;
   transition: all 0.5s ease-in-out;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: -20px;
   animation: floatIn 0.5s ease-in-out forwards;
 }
 
@@ -425,12 +426,12 @@ h1 {
 }
 
 .content-container .about-container .border h1 {
+  font-family: 'Yeseva One', cursive;
   font-size: xx-large;
 }
 
 .content-container .about-container .border p {
   margin-top: 50px;
-  font-weight: bold;
   font-size: x-large;
 }
 
