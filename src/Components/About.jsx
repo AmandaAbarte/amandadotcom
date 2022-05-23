@@ -32,12 +32,13 @@ export default function About(props) {
         </div>
         <p>Hi, Im Amanda, Im a Front-end Web Developer. designer and artist.</p>
         <p>
-          I have always been an artistic and creativ person. Art - painting, drawing, designing have always been a passion of mine. 
+          {/* I have always been an artistic and creativ person. Art - painting, drawing, designing have always been a passion of mine. 
           <br/>
           Discovering Front-end development gave me the possibility to work creatively and pursure my interests in visual arts, while also having a practical and useful application.
           <br/>
           Currently I am in the final stages of completing the Front-End Developer Qualification (Bac + 4 / Niveu 6 EQF) through OpenClassrooms.
-          I am eager to take the next step of my journy and work in an environment that would allow me to grow and keep learning.
+          I am eager to take the next step of my journy and work in an environment that would allow me to grow and keep learning. */}
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt magnam eius vel, ullam in tenetur esse consequatur sunt nostrum tempora nisi, optio alias commodi reprehenderit est ea laudantium quam a?
         </p>
       </div>
       
