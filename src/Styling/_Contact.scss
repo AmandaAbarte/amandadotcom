@@ -1,10 +1,9 @@
 .content-container {
-    .contact-container {
-      position: absolute;
-      top: 50%;
-      right: 20%;
-      width: 100px;
-      height: 100px;
-      background-color: orange;
-    }
+  .contact-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    // background-color: orange;
+    transition: all 0.5s ease-in-out;
   }
+}

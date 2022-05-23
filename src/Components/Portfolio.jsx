@@ -19,7 +19,7 @@ export default function Portfolio(props) {
                   <a href="#">Link to the GitHub Repo</a>
               </div>
           </div>
-          <div className="item item-right" style={{borderTop: props.lights? "2px solid black" :"2px solid white"}}s>
+          <div className="item item-right" style={{borderTop: props.lights? "2px solid black" :"2px solid white"}}>
               <img src={sample} className="item-image"></img>
               <div className="item-info">
                   <h1>Website Name</h1>

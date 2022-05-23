@@ -14,12 +14,7 @@ import snakeD from "../assets/cards/SerpentD.png";
 import Card from "./Card";
 
 export default function Nav(props) {
-  
-
   const [isSelected, setIsSelected] = React.useState(false);
-//   const portNav = isSelected ? "95%" : "90%" ;
-//   const abNav =  isSelected ? "90%" : "30%";
-//   const conNav =  isSelected ? "50%" : "37%" ;
   const [cards, setCards] = React.useState([
     {
       title: "Portfolio",
@@ -85,13 +80,17 @@ export default function Nav(props) {
         isSelected={isSelected}
         isActive={card.isActive}
         handleClick={() => handleClick(card.title)}
-        styles={isSelected? card.styleNav: card.styleDef}
+        styles={isSelected ? card.styleNav : card.styleDef}
       />
     );
   });
   //depending on if content is set to active displays different content
   const Cont = mainContent.map((content) => {
-    return content.isActive ? <content.type key={content.name} lights={props.lights}/> : "";
+    return content.isActive ? (
+      <content.type key={content.name} lights={props.lights} />
+    ) : (
+      ""
+    );
   });
   return (
     <>

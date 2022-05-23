@@ -550,10 +550,8 @@ h1 {
 
 .content-container .contact-container {
   position: absolute;
-  top: 50%;
-  right: 20%;
-  width: 100px;
-  height: 100px;
-  background-color: orange;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s ease-in-out;
 }
 /*# sourceMappingURL=App.css.map */
