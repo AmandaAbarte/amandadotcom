@@ -19,7 +19,6 @@ export default function About(props) {
           border: props.lights ? "2px solid black" : "2px solid white",
           color: props.lights ? "white" : "black",
           backgroundColor: props.lights ? "black" : "white",
-          boxShadow: props.lights ? "2px 2px 10px black" : "2px 2px 10px white",
           backgroundImage: props.lights ? `url(${birdL})` : `url(${birdD})`,
         }}
       >
@@ -33,15 +32,12 @@ export default function About(props) {
         </div>
         <p>Hi, Im Amanda, Im a Front-end Web Developer. designer and artist.</p>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-          corrupti, ea labore magnam inventore necessitatibus sit suscipit omnis
-          dolorem, <br />
-          accusamus quos possimus reprehenderit porro sunt ut provident maiores
-          quis hic. <br />
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse iusto,
-          vel impedit earum repellat delectus veritatis corporis at laborum
-          alias? Cupiditate repudiandae quae vero totam praesentium eos ea ab.
-          Vel?
+          I have always been an artistic and creativ person. Art - painting, drawing, designing have always been a passion of mine. 
+          <br/>
+          Discovering Front-end development gave me the possibility to work creatively and pursure my interests in visual arts, while also having a practical and useful application.
+          <br/>
+          Currently I am in the final stages of completing the Front-End Developer Qualification (Bac + 4 / Niveu 6 EQF) through OpenClassrooms.
+          I am eager to take the next step of my journy and work in an environment that would allow me to grow and keep learning.
         </p>
       </div>
       

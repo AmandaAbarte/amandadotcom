@@ -392,6 +392,7 @@ h1 {
 .content-container .about-container .border .profile .prof4 {
   position: absolute;
   bottom: -2px;
+  left: -2px;
 }
 
 .content-container .about-container .border .profile:hover {
@@ -605,6 +606,7 @@ h1 {
   display: flex;
   flex-direction: column;
   width: 80%;
+  animation: floatIn 0.5s ease-in-out forwards;
 }
 
 .content-container .contact-container .form input {
