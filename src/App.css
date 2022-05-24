@@ -606,6 +606,7 @@ h1 {
   left: 10%;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   width: 80%;
   animation: floatIn 0.5s ease-in-out forwards;
 }
@@ -614,7 +615,20 @@ h1 {
   width: 100%;
   margin-top: 10px;
   text-indent: 10px;
-  border-radius: 5px;
-  height: 50px;
+  padding: 5px;
+  background-color: transparent;
+  border: 0;
+}
+
+.content-container .contact-container .form .name {
+  height: 40px;
+}
+
+.content-container .contact-container .form .email {
+  height: 40px;
+}
+
+.content-container .contact-container .form .message {
+  height: 100px;
 }
 /*# sourceMappingURL=App.css.map */
