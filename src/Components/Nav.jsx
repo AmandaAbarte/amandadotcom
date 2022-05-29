@@ -22,7 +22,7 @@ export default function Nav(props) {
       imageL: birdL,
       isActive: false,
       styleDef: "10%",
-      styleNav: "40%",
+      styleNav: "40%", 
     },
     {
       title: "About",
