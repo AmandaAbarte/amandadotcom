@@ -1,7 +1,26 @@
 import React from "react";
 import sample from "../assets/sample.png";
+import projects from "../projects.json";
+import Project from "./Project";
+// import Reservia from "../assets/screenshots/reservia.JPG";
 
 export default function Portfolio(props) {
+    const images = projects.map((project)=> {
+
+    })
+  const projectCards = projects.map((project) => {
+    return (
+      <Project
+        key={project.title}
+        title={project.title}
+        descriptiom={project.description}
+        preview={project.preview}
+        github={project.github}
+        link={project.link}
+        lights={props.lights}
+      />
+    );
+  });
   return (
     <div
       className="portfolio-container"
@@ -10,24 +29,7 @@ export default function Portfolio(props) {
         color: props.lights ? "black" : "white",
       }}
     >
-      <div className="item-container">
-          <div className="item" style={{borderTop: props.lights? "2px solid black" :"2px solid white"}}>
-              <img src={sample} className="item-image"></img>
-              <div className="item-info">
-                  <h1>Website Name</h1>
-                  <p>Website description and what languages/ libraries used maybe?</p>
-                  <a href="#">Link to the GitHub Repo</a>
-              </div>
-          </div>
-          <div className="item item-right" style={{borderTop: props.lights? "2px solid black" :"2px solid white"}}>
-              <img src={sample} className="item-image"></img>
-              <div className="item-info">
-                  <h1>Website Name</h1>
-                  <p>Website description and what languages/ libraries used maybe?</p>
-                  <a href="#">Link to the GitHub Repo</a>
-              </div>
-          </div>
-      </div>
+      <div className="item-container">{projectCards}</div>
       <div
         className="icons"
         style={{ color: props.lights ? "black" : "white" }}

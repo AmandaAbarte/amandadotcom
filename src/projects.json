@@ -11,7 +11,7 @@
         "id": "3",
         "title": "GameOn",
         "description": "Implementation of form validation with Javascript for 'GameOn', a company specializing in gaming conferences and contests",
-        "preview": "../assets/screenshots/gameon.jpg",
+        "preview": "gameon",
         "github": "https://github.com/AmandaAbarte/Amanda_Laura_Abarte_P4_01-01-2022",
         "link": "https://amandaabarte.github.io/Amanda_Laura_Abarte_P4_01-01-2022/"
     },
@@ -19,7 +19,7 @@
         "id": "2",
         "title": "OhMyFood",
         "description": "Prototype for 'Oh My Food' - a platform for restaurants to display their menus and allow customers to make reservations in advance",
-        "preview": "../assets/screenshots/ohmyfood.jpg",
+        "preview": "ohmyfood",
         "github": "https://github.com/AmandaAbarte/AmandaLauraAbarte_3_04-10-21",
         "link": "https://amandaabarte.github.io/AmandaLauraAbarte_3_04-10-21/index.html"
     },
@@ -27,7 +27,7 @@
         "id": "1",
         "title": "Reservia",
         "description": "Prototype of landing page for 'Reservia' - a vacation planning tool. This project was made exclusively with html and css ",
-        "preview": "../assets/screenshots/reservia.jpg",
+        "preview": "reservia",
         "github": "https://github.com/AmandaAbarte/AmandaLauraAbarte_2_23-09-2021",
         "link": "https://amandaabarte.github.io/AmandaLauraAbarte_2_23-09-2021/"
     }

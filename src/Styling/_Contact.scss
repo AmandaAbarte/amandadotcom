@@ -1,14 +1,15 @@
 .content-container {
   .contact-container {
-    position: absolute;
+    // position: absolute;
     width: 100%;
     height: 100%;
+    //IMPORTANT
+    padding-bottom: 50%;
     // background-color: orange;
     transition: all 0.5s ease-in-out;
     .form {
-      position: absolute;
-      top: 30%;
-      left: 10%;
+      // position: absolute;
+      padding-top: 15%;
       display: flex;
       flex-direction: column;
       align-items: flex-start;

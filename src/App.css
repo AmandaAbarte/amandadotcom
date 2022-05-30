@@ -3,7 +3,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap");
 body {
   background-color: red;
-  height: 100%;
 }
 
 * {
@@ -11,7 +10,9 @@ body {
 }
 
 .app {
-  position: relative;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
   transition: all 0.5s ease-in-out;
 }
 
@@ -63,6 +64,7 @@ body {
 
 .nav-to-top {
   height: 7%;
+  top: 0;
 }
 
 .nav-to-top .heading {
@@ -320,17 +322,15 @@ h1 {
 }
 
 .content-container {
-  position: fixed;
+  position: relative;
   z-index: -1;
-  height: 100%;
   width: 100%;
   background-color: aqua;
 }
 
 .content-container .about-container {
-  position: absolute;
-  top: 0%;
-  right: 0%;
+  position: relative;
+  padding: 15% 0 25%;
   width: 100%;
   height: 100%;
   background-color: black;
@@ -358,6 +358,7 @@ h1 {
 
 .content-container .about-container .border .profile {
   position: absolute;
+  z-index: 1;
   height: 150px;
   width: 150px;
   top: 0px;
@@ -465,16 +466,14 @@ h1 {
 }
 
 .content-container .portfolio-container {
-  position: absolute;
   width: 100%;
   height: 100%;
   transition: all 0.5s ease-in-out;
 }
 
 .content-container .portfolio-container .item-container {
-  position: absolute;
-  top: 15%;
-  left: 10%;
+  padding-top: 15%;
+  margin-left: 10%;
   width: 50%;
 }
 
@@ -585,7 +584,7 @@ h1 {
 @keyframes floatLeft {
   0% {
     opacity: 0;
-    transform: translateX(-50px);
+    transform: translateX(-40px);
   }
   100% {
     opacity: 1;
@@ -594,16 +593,14 @@ h1 {
 }
 
 .content-container .contact-container {
-  position: absolute;
   width: 100%;
   height: 100%;
+  padding-bottom: 50%;
   transition: all 0.5s ease-in-out;
 }
 
 .content-container .contact-container .form {
-  position: absolute;
-  top: 30%;
-  left: 10%;
+  padding-top: 15%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;

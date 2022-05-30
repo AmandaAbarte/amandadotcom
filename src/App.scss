@@ -1,13 +1,16 @@
 body {
   background-color: red;
-  height: 100%;
+  // height: 100%;
 }
 * {
   margin: 0 auto;
 }
 .app {
-  position: relative;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
   transition: all 0.5s ease-in-out;
+  // background-color: black;
   //   cursor: url(cursor.png), auto;
 }
 @import "./Styling/Variables";
