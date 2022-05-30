@@ -149,3 +149,9 @@
     transform-origin: top center;
   }
 }
+
+@media (max-width: 525px) {
+  .mode {
+    top: -20px;
+  }
+}

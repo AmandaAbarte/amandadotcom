@@ -23,7 +23,6 @@ body {
   flex-direction: column;
   color: white;
   width: 100%;
-  max-width: 1440px;
   height: 100%;
   transition: all 0.5s ease-in-out;
 }
@@ -34,9 +33,13 @@ body {
   transition: all 0.5s ease-in-out;
 }
 
+.cards .tarot-container {
+  max-width: 1440px;
+}
+
 .cards .tarot-container .tarot {
   position: absolute;
-  top: 20%;
+  top: 25%;
   margin: 0 5px;
   border-radius: 10px;
   transition: all 0.5s ease-in-out;
@@ -57,10 +60,6 @@ body {
 
 .cards .tarot-container .tarot h1 {
   font-size: 40px;
-}
-
-.navCard {
-  background-color: red;
 }
 
 .nav-to-top {
@@ -328,6 +327,12 @@ h1 {
   }
 }
 
+@media (max-width: 525px) {
+  .mode {
+    top: -20px;
+  }
+}
+
 .content-container {
   position: relative;
   z-index: -1;
@@ -352,7 +357,6 @@ h1 {
   position: relative;
   width: 60%;
   height: 500px;
-  top: 20%;
   left: 10%;
   margin: 0;
   border: 2px solid white;
@@ -469,6 +473,18 @@ h1 {
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@media (max-width: 600px) {
+  .content-container .about-container .border {
+    margin: 10% 0 0;
+  }
+}
+
+@media (max-width: 470px) {
+  .content-container .about-container .border {
+    margin: 20% 0 0;
   }
 }
 
