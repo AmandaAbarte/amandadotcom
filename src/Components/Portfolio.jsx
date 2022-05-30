@@ -13,7 +13,7 @@ export default function Portfolio(props) {
       <Project
         key={project.title}
         title={project.title}
-        descriptiom={project.description}
+        description={project.description}
         preview={project.preview}
         github={project.github}
         link={project.link}

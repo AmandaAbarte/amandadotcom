@@ -1,11 +1,27 @@
 [
     {
-        "id": "",
-        "title": "",
-        "description": "",
+        "id": "6",
+        "title": "Kasa",
+        "description": "A React Project for 'Kasa', an appartment rental company. Displaying rental properties, their amenities and a photo gallery of each listing",
         "preview": "",
-        "github": "",
-        "link": ""
+        "github": "https://github.com/AmandaAbarte/amandaabarte_120522_p11",
+        "link": "https://amandaabarte.github.io/"
+    },
+    {
+        "id": "5",
+        "title": "Les Petits Plats",
+        "description": "A recipe website that was laking a sorting / filtering function that was implemented through javascript",
+        "preview": "",
+        "github": "https://github.com/AmandaAbarte/amandalauraabarte_P7_10-03-2022",
+        "link": "https://amandaabarte.github.io/amandalauraabarte_P7_10-03-2022/"
+    },
+    {
+        "id": "4",
+        "title": "Fisheye",
+        "description": "With a Focus on accessability, 'Fisheye' is a freelance photography page to show off their work",
+        "preview": "",
+        "github": "https://github.com/AmandaAbarte/AmandaLauraAbarteP6_25012022",
+        "link": "https://amandaabarte.github.io/AmandaLauraAbarteP6_25012022/"
     },
     {
         "id": "3",
