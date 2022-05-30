@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/amandadotcom/static/css/main.1b40b6f6.css",
-    "main.js": "/amandadotcom/static/js/main.2e681cab.js",
+    "main.css": "/amandadotcom/static/css/main.9f157b81.css",
+    "main.js": "/amandadotcom/static/js/main.bfc1f0f6.js",
     "static/js/787.ef31bc14.chunk.js": "/amandadotcom/static/js/787.ef31bc14.chunk.js",
     "static/media/profile(4).png": "/amandadotcom/static/media/profile(4).b18c0e1261a05b7fb028.png",
     "static/media/profile(2).png": "/amandadotcom/static/media/profile(2).24825b7f3c3869512834.png",
@@ -22,12 +22,12 @@
     "static/media/Planet(1).png": "/amandadotcom/static/media/Planet(1).347773d973755d0cffac.png",
     "static/media/Planet(4).png": "/amandadotcom/static/media/Planet(4).4e56bdf7d7e6686728a6.png",
     "index.html": "/amandadotcom/index.html",
-    "main.1b40b6f6.css.map": "/amandadotcom/static/css/main.1b40b6f6.css.map",
-    "main.2e681cab.js.map": "/amandadotcom/static/js/main.2e681cab.js.map",
+    "main.9f157b81.css.map": "/amandadotcom/static/css/main.9f157b81.css.map",
+    "main.bfc1f0f6.js.map": "/amandadotcom/static/js/main.bfc1f0f6.js.map",
     "787.ef31bc14.chunk.js.map": "/amandadotcom/static/js/787.ef31bc14.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1b40b6f6.css",
-    "static/js/main.2e681cab.js"
+    "static/css/main.9f157b81.css",
+    "static/js/main.bfc1f0f6.js"
   ]
 }
