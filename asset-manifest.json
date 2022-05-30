@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/amandadotcom/static/css/main.e7bc5a2a.css",
-    "main.js": "/amandadotcom/static/js/main.7d5f571b.js",
+    "main.css": "/amandadotcom/static/css/main.1b40b6f6.css",
+    "main.js": "/amandadotcom/static/js/main.2e681cab.js",
     "static/js/787.ef31bc14.chunk.js": "/amandadotcom/static/js/787.ef31bc14.chunk.js",
     "static/media/profile(4).png": "/amandadotcom/static/media/profile(4).b18c0e1261a05b7fb028.png",
     "static/media/profile(2).png": "/amandadotcom/static/media/profile(2).24825b7f3c3869512834.png",
@@ -15,18 +15,19 @@
     "static/media/FlightD.png": "/amandadotcom/static/media/FlightD.bc44767a1a75ab9befbd.png",
     "static/media/FlightL.png": "/amandadotcom/static/media/FlightL.e6ed7d49794269990ebc.png",
     "static/media/lightbulb.png": "/amandadotcom/static/media/lightbulb.cc2c13a6868f07b72344.png",
+    "static/media/reservia.JPG": "/amandadotcom/static/media/reservia.defd005d24839c84d15c.JPG",
     "static/media/Planet(2).png": "/amandadotcom/static/media/Planet(2).8a389d70ab3d45d89572.png",
     "static/media/Planet(5).png": "/amandadotcom/static/media/Planet(5).f03e607b8422d5ed6c01.png",
     "static/media/Planet(3).png": "/amandadotcom/static/media/Planet(3).88460639306b3e2ad8ac.png",
     "static/media/Planet(1).png": "/amandadotcom/static/media/Planet(1).347773d973755d0cffac.png",
     "static/media/Planet(4).png": "/amandadotcom/static/media/Planet(4).4e56bdf7d7e6686728a6.png",
     "index.html": "/amandadotcom/index.html",
-    "main.e7bc5a2a.css.map": "/amandadotcom/static/css/main.e7bc5a2a.css.map",
-    "main.7d5f571b.js.map": "/amandadotcom/static/js/main.7d5f571b.js.map",
+    "main.1b40b6f6.css.map": "/amandadotcom/static/css/main.1b40b6f6.css.map",
+    "main.2e681cab.js.map": "/amandadotcom/static/js/main.2e681cab.js.map",
     "787.ef31bc14.chunk.js.map": "/amandadotcom/static/js/787.ef31bc14.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e7bc5a2a.css",
-    "static/js/main.7d5f571b.js"
+    "static/css/main.1b40b6f6.css",
+    "static/js/main.2e681cab.js"
   ]
 }
