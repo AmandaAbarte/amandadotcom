@@ -481,23 +481,37 @@ h1 {
   animation: floatLeft 0.5s ease-in-out forwards;
   border-top: 2px solid white;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   margin-top: 30px;
   padding: 30px 0;
+  overflow-wrap: break-word;
 }
 
 .content-container .portfolio-container .item-container .item .item-image {
-  width: 300px;
+  margin: 0;
+  width: 40%;
   border: 2px solid black;
 }
 
 .content-container .portfolio-container .item-container .item .item-info {
-  margin: 0 15px;
+  width: 40%;
+  margin: 0;
+  margin-left: 5%;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
-  align-items: flex-start;
 }
 
 .content-container .portfolio-container .item-container .item .item-info h1 {
+  margin: 0;
+}
+
+.content-container .portfolio-container .item-container .item .item-info p {
+  margin: 0;
+}
+
+.content-container .portfolio-container .item-container .item .item-info a {
   margin: 0;
 }
 
@@ -514,7 +528,7 @@ h1 {
   position: absolute;
   width: 50%;
   left: 10%;
-  top: 12%;
+  top: 8%;
   animation: floatIn 0.5s ease-in-out forwards;
   display: flex;
   justify-content: space-evenly;
