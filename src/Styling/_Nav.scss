@@ -5,6 +5,7 @@
   flex-direction: column;
   color: white;
   width: 100%;
+  max-width: 1440px;
   height: 100%;
   transition: all 0.5s ease-in-out;
   .heading {
@@ -50,10 +51,15 @@
 }
 
 .tarot-to-nav {
-  transform: translateY(-88%);
+  transform: translateY(-84%);
   &:hover {
-    transform: translateY(-84%);
+    transform: translateY(-82%);
     cursor: pointer;
+  }
+}
+@media (min-width: 768px) {
+  .tarot-to-nav {
+    transform: translateY(-88%);
   }
 }
 // @keyframes hidetext {

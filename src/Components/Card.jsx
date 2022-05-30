@@ -4,6 +4,8 @@ import { useMediaQuery } from "react-responsive";
 export default function Card(props) {
   const isDesktopOrLaptop = useMediaQuery({ query: "(min-width: 1023px)" });
   const isBigScreen = useMediaQuery({ query: "(min-width: 1624px)" });
+  const isTablet = useMediaQuery({ query: "(max-width: 600px)" });
+  const isMobile = useMediaQuery({ query: "(max-width: 470px)" });
   const isTabletOrMobile = useMediaQuery({ query: "(min-width: 0px)" });
   // function MouseOver(event) {
   //   event.target.style.transform = props.isSelected? "translateY(-80%)" : "translateY(5%)"
@@ -28,14 +30,21 @@ export default function Card(props) {
             ? "5px black solid"
             : "5px white solid",
         width:
-          props.isSelected && isBigScreen
-            ? "200px"
-            : props.isSelected && isDesktopOrLaptop
-            ? "150px"
-            : props.isSelected && isTabletOrMobile
+        props.isSelected && isMobile
+            ? "30%" :
+          props.isSelected && isTablet
+            ? "20%"
+            
+            // : props.isSelected
+            // ? "14%"
+            : "20%",
+        left: props.isSelected && isMobile ? "0" : props.styles,
+        top:
+          props.isSelected && isMobile && props.title === "About"
+            ? "57px"
+            : props.isSelected && isMobile && props.title === "Portfolio"
             ? "100px"
-            : "300px",
-        left: props.styles,
+            : "",
         backgroundColor:
           props.lights && props.isSelected
             ? "black"

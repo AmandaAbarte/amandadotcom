@@ -23,6 +23,7 @@ body {
   flex-direction: column;
   color: white;
   width: 100%;
+  max-width: 1440px;
   height: 100%;
   transition: all 0.5s ease-in-out;
 }
@@ -72,12 +73,18 @@ body {
 }
 
 .tarot-to-nav {
-  transform: translateY(-88%);
+  transform: translateY(-84%);
 }
 
 .tarot-to-nav:hover {
-  transform: translateY(-84%);
+  transform: translateY(-82%);
   cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .tarot-to-nav {
+    transform: translateY(-88%);
+  }
 }
 
 .loader-container {
@@ -472,7 +479,7 @@ h1 {
 }
 
 .content-container .portfolio-container .item-container {
-  padding-top: 15%;
+  padding-top: 10%;
   margin-left: 10%;
   width: 50%;
 }
@@ -503,15 +510,7 @@ h1 {
   flex-direction: column;
 }
 
-.content-container .portfolio-container .item-container .item .item-info h1 {
-  margin: 0;
-}
-
-.content-container .portfolio-container .item-container .item .item-info p {
-  margin: 0;
-}
-
-.content-container .portfolio-container .item-container .item .item-info a {
+.content-container .portfolio-container .item-container .item .item-info h1, .content-container .portfolio-container .item-container .item .item-info p, .content-container .portfolio-container .item-container .item .item-info a {
   margin: 0;
 }
 
@@ -528,7 +527,7 @@ h1 {
   position: absolute;
   width: 50%;
   left: 10%;
-  top: 8%;
+  top: 5%;
   animation: floatIn 0.5s ease-in-out forwards;
   display: flex;
   justify-content: space-evenly;
