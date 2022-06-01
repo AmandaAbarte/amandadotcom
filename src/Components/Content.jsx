@@ -2,9 +2,8 @@ import React from "react";
 import Portfolio from "./Portfolio";
 import About from "./About";
 import Contact from "./Contact";
-import Nav from "./Nav";
 
-export default function (){
+export default function Content(){
     return (
         <div className="content-container">
             <Portfolio/>

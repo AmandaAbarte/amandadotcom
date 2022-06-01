@@ -13,7 +13,7 @@ export default function Lighting(props) {
       </div>
       <div className="light-hang">
         <div className={`string ${props.lights ? `bulbOn` : `bulbOff`}`}></div>
-        <img src={lamp} className="bulb"></img>
+        <img src={lamp} className="bulb" alt="Illustration of Light Bulb"></img>
       </div>
     </div>
   );

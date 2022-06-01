@@ -4,8 +4,6 @@ import prof2 from "../assets/profile(2).png";
 import prof3 from "../assets/profile(3).png";
 import prof4 from "../assets/profile(4).png";
 
-import birdL from "../assets/cards/BloomL.png";
-import birdD from "../assets/cards/BloomD.png";
 
 export default function About(props) {
   return (
@@ -26,10 +24,10 @@ export default function About(props) {
         <h1>Amanda Abarte</h1>
         <h2>Front-end Dev, Designer, Artist</h2>
         <div className="profile">
-          <img src={prof1} className="prof prof1"></img>
-          <img src={prof2} className="prof prof2"></img>
-          <img src={prof3} className="prof prof3"></img>
-          <img src={prof4} className="prof prof4"></img>
+          <img src={prof1} className="prof prof1" alt="Profile of Amanda Abarte"></img>
+          <img src={prof2} className="prof prof2" alt="Profile of Amanda Abarte"></img>
+          <img src={prof3} className="prof prof3" alt="Profile of Amanda Abarte"></img>
+          <img src={prof4} className="prof prof4" alt="Profile of Amanda Abarte"></img>
         </div>
         <p>Hi, Im Amanda, Im a Front-end Web Developer, designer and artist.</p>
         <p>

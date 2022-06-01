@@ -3,7 +3,6 @@ import React from "react";
 import Portfolio from "./Portfolio";
 import About from "./About";
 import Contact from "./Contact";
-import Content from "./Content";
 
 import birdL from "../assets/cards/FlightL.png";
 import roseL from "../assets/cards/BloomL.png";
@@ -43,9 +42,9 @@ export default function Nav(props) {
   ]);
   //isSelected means is the nav bar at the top
   const [mainContent, setMainContent] = React.useState([
-    { type: Portfolio, name: "Portfolio", isActive: false },
-    { type: About, name: "About", isActive: false },
-    { type: Contact, name: "Contact", isActive: false },
+    { type: Portfolio, name: "Portfolio", isActive: false, alt: "Line art illustration of a Bird" },
+    { type: About, name: "About", isActive: false, alt: "Line art illustration of a Rose" },
+    { type: Contact, name: "Contact", isActive: false, alt: "Line art illustration of a Snake" },
   ]);
 
   function handleClick(title) {
@@ -76,6 +75,7 @@ export default function Nav(props) {
         imageD={card.imageD}
         imageL={card.imageL}
         mode={props.mode}
+        alt={card.alt}
         lights={props.lights}
         isSelected={isSelected}
         isActive={card.isActive}

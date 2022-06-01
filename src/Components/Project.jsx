@@ -9,11 +9,11 @@ export default function Project(props) {
             borderTop: props.lights ? "2px solid black" : "2px solid white",
           }}
         >
-          <img src={Reservia} className="item-image"></img>
+          <img src={Reservia} className="item-image" alt="screenshot of website"></img>
           <div className="item-info">
             <h1>{props.title}</h1>
             <p>{props.description}</p>
-            <a href="#">{props.link}</a>
+            <a href={props.link}>{props.link}</a>
           </div>
       </div>
     )

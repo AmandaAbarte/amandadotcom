@@ -9,11 +9,11 @@ export default function Loader() {
   return (
     <div className="loader-container">
         <div className="card-container">
-            <img src={planet1} className="loader-card one"/>
-            <img src={planet2} className="loader-card two"/>
-            <img src={planet3} className="loader-card three"/>
-            <img src={planet4} className="loader-card four"/>
-            <img src={planet5} className="loader-card five"/>
+            <img src={planet1} alt="" className="loader-card one"/>
+            <img src={planet2} alt="" className="loader-card two"/>
+            <img src={planet3} alt="" className="loader-card three"/>
+            <img src={planet4} alt="" className="loader-card four"/>
+            <img src={planet5} alt="" className="loader-card five"/>
         </div>
     </div>
   );

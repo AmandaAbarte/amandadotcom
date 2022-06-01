@@ -1,9 +1,8 @@
 import "./App.css";
 import React from "react";
 import Nav from "./Components/Nav";
-import Loader from "./Components/Loader";
+// import Loader from "./Components/Loader";
 import Lighting from "./Components/Lighting";
-import Content from "./Components/Content";
 
 function App() {
   const [lightsOn, setLightsOn] = React.useState(false);
@@ -18,7 +17,6 @@ function App() {
       {/* <Loader /> */}
       <Nav switchLights={switchLights} mode={mode} lights={lightsOn} />
 
-      {/* <Content /> */}
     </div>
   );
 }

@@ -1,13 +1,10 @@
 import React from "react";
-import sample from "../assets/sample.png";
 import projects from "../projects.json";
 import Project from "./Project";
 // import Reservia from "../assets/screenshots/reservia.JPG";
 
 export default function Portfolio(props) {
-    const images = projects.map((project)=> {
-
-    })
+   
   const projectCards = projects.map((project) => {
     return (
       <Project

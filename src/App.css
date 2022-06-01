@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap");
 body {
-  background-color: red;
+  background-color: black;
 }
 
 * {
@@ -356,7 +356,6 @@ h1 {
 .content-container .about-container .border {
   position: relative;
   width: 60%;
-  height: 500px;
   left: 10%;
   margin: 0;
   border: 2px solid white;
@@ -405,7 +404,6 @@ h1 {
 .content-container .about-container .border .profile .prof4 {
   position: absolute;
   bottom: -2px;
-  left: -2px;
 }
 
 .content-container .about-container .border .profile:hover {

@@ -1,12 +1,12 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useMediaQuery } from "react-responsive";
 
 export default function Card(props) {
-  const isDesktopOrLaptop = useMediaQuery({ query: "(min-width: 1023px)" });
-  const isBigScreen = useMediaQuery({ query: "(min-width: 1624px)" });
+  // const isDesktopOrLaptop = useMediaQuery({ query: "(min-width: 1023px)" });
+  // const isBigScreen = useMediaQuery({ query: "(min-width: 1624px)" });
   const isTablet = useMediaQuery({ query: "(max-width: 600px)" });
   const isMobile = useMediaQuery({ query: "(max-width: 470px)" });
-  const isTabletOrMobile = useMediaQuery({ query: "(min-width: 0px)" });
+  // const isTabletOrMobile = useMediaQuery({ query: "(min-width: 0px)" });
   // function MouseOver(event) {
   //   event.target.style.transform = props.isSelected? "translateY(-80%)" : "translateY(5%)"
   // }
@@ -34,7 +34,7 @@ export default function Card(props) {
             ? "30%" :
           props.isSelected && isTablet
             ? "20%"
-            
+            : isMobile ? "60%"
             // : props.isSelected
             // ? "14%"
             : "20%",
@@ -57,6 +57,7 @@ export default function Card(props) {
       <img
         src={props.lights ? props.imageL : props.imageD}
         className={props.isSelected ? `clicked` : ``}
+        alt={props.alt}
       ></img>
       <h1
         className={props.mode}
